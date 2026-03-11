@@ -151,17 +151,6 @@ margin: 0 auto;
 text-align: center;
 }
 
-.about-me__picture--mask {
-    width:400px;
-    height: 400px;
-    border: 0px;
-    border-radius: 10%;
-    overflow: hidden;
-    box-shadow: 0 8px 16px black (0, 0, 0, 0.16);
-    margin-bottom: 28px;
-    animation: animate-profile-picture 800ms 200ms backwards;
-}
-
 @keyframes animate-profile-picture {
     0% {
         transform: scale(0);
@@ -174,8 +163,16 @@ text-align: center;
     }
 }
 
+.my-pic--container {
+   
+}
 .about-me__picture {
     width: 100%;
+    border: 0px;
+    border-radius: 20px;
+    box-shadow: 9px 9px 16px black (0, 0, 0, 0.26);
+    margin-bottom: 28px;
+    animation: animate-profile-picture 800ms 200ms backwards;
         
 /*Improving my own picture */
 transform: scale (1.5);
@@ -184,12 +181,12 @@ padding-top: 8px;
 
 .about-me__info--title {
     margin-bottom: 16px;
-    animation: fade-up 400ms backwards;
+    animation: fade-up 600ms backwards;
 }
 .about-me__info--para {
     font-size: 20px;
     margin-bottom: 28px;
-    animation: fade-up 600ms backwards;
+    animation: fade-up 800ms backwards;
 }
 
 .about-me__link {
@@ -199,13 +196,13 @@ padding-top: 8px;
 }
 
 .about-me__links {
-    animation: fade-up 800ms backwards;
+    animation: fade-up 1000ms backwards;
 }
 
 @keyframes fade-up {
     0% {
-        opacity: 1;
-        transform: translateY(0)
+        opacity: 0;
+        transform: translateY(20px)
     }
     100% {
         opacity: 1;
@@ -222,6 +219,8 @@ padding-top: 8px;
 
 .about-me__img {
     width: 50% 
+    height: 24px;
+    width: 300px;
     animation: fade-in 1200ms 800 ms backwards;
 }
 
